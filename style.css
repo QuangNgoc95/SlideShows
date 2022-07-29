@@ -1,0 +1,24 @@
+body{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    border: 1px solid red;
+    display: flex;
+}
+.controls{
+    flex-basis: 100px;
+
+}
+.slide-div{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+.img-div{
+    display: flex;
+}
+.anh{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
