@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <form id="myForm"><div class="control-group">
+        <label class="label-class">
+            <input type="checkbox" class="group1"  value="1" name="testing1"></input>
+        </label>
+        <label class="label-class">
+            <input type="checkbox" class="group1" value="1" name="testing2"></input>
+        </label>
+        <label class="label-class">
+            <input type="checkbox" class="group1"  value="1" name="testing3"></input>
+        </label>
+        <button>Button</button>
+    </div>
+    </form>
+    <button id="button">Submit</button>
+    <script>
+        $("#myForm").validate({
+        rules: {
+            testing1: {
+                require_from_group: [1, ".group1"]
+            },
+             testing2: {
+                require_from_group: [1, ".group1"]
+            },
+             testing3: {
+                require_from_group: [1, ".group1"]
+            }
+        },
+        message: {
+            testing1: "please select at least one item",
+            testing2: "please select at least one item",
+            testing3: "please select at least one item",
+        }
+     });
+
+$("button").click(function(e) {
+
+return $("#myForm").valid();
+
+ });
+    </script>
+</body>
+
+</html>

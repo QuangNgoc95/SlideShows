@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Slide Show</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <button class="controls">Prew</button>
-        <div class="slide-div">
-            <div class="img-div">
-                <img class="anh" src="/Wallpaper/1650522270836.jpg" alt="">
-                <img class="anh" src="/Wallpaper/6424303.jpg" alt="">
-                <img class="anh" src="/Wallpaper/công tôn ly.jpg" alt="">
-                <img class="anh" src="/Wallpaper/dai_kieu.jpg" alt="">
-                <img class="anh" src="/Wallpaper/kings-of-glory-2020-4k-qx.jpg" alt="">
-                <img class="anh" src="/Wallpaper/yao.jpeg" alt="">
-            </div>
+    <div class="container">
+        <div class="radio-auto">
+            <input type="radio" name="auto" id="radio0">
+            <input type="radio" name="auto" id="radio1">
+            <input type="radio" name="auto" id="radio2">
+            <input type="radio" name="auto" id="radio3">
+            <input type="radio" name="auto" id="radio4">
         </div>
-    <button class="controls">Next</button>
-</body>
+        <div class="listimg">
+            <div class="img"><img src="./img/0.jpeg" alt=""></div>
+            <div class="img"><img src="./img/1.jpeg" alt=""></div>
+            <div class="img"><img src="./img/2.jpeg" alt=""></div>
+            <div class="img"><img src="./img/3.jpeg" alt=""></div>
+            <div class="img"><img src="./img/4.jpeg" alt=""></div>
+        </div>
+        <div class="label-auto">
+            <label class="auto" for="radio0"></label>
+            <label class="auto" for="radio1"></label>
+            <label class="auto" for="radio2"></label>
+            <label class="auto" for="radio3"></label>
+            <label class="auto" for="radio4"></label>
+        </div>
+    </div>
 
+
+
+    <script src="app.js"></script>
+</body>
 </html>
